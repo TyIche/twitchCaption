@@ -1,0 +1,12 @@
+.caption{
+    FONT-WEIGHT: 400;
+    background: rgb(255,255,255,0.8);
+    z-index: 9999;
+    position: fixed;
+    left: 20%;
+    right: 20%;
+    height: 80px;
+    bottom: 0%;
+    font-size: 20px;
+    text-align: center;
+}

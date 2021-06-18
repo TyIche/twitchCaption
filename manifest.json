@@ -1,0 +1,41 @@
+{
+    "name": "twitchCaption",
+    "description": "Build an Extension!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+      "https://fanyi-api.baidu.com/api/trans/vip/translate/*"
+    ],
+    "background": {
+    
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": [ "http://*/*",
+            "https://*/*",
+            "file:///*/*"],
+          "css" : ["caption.css"],
+          "js":["jq.js","md5.js","igno.js"],
+          "run_at": "document_idle"
+        }
+    ],
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/img/d.png",
+        "32": "/img/d.png",
+        "48": "/img/d.png",
+        "128": "/img/d.png"
+      }
+    },
+    
+    "icons": {
+      "16": "/img/d.png",
+      "32": "/img/d.png",
+      "48": "/img/d.png",
+      "128": "/img/d.png"
+    }
+  }
+  
